@@ -22,3 +22,7 @@ nextjs tutorial app
 ## Chapter 13 - Error handling
 - Added an error.tsx file to act as an error handling UI for its route boundary (any time an uncaught exception is thrown within its route scope it will display)
 - Added a not-found.tsx page and used the notFound nextJS function to trigger it
+
+## Chapter 14 - Improving Accessibility and form validation
+- Adding accessibility checks via lint "pnpm lint"
+- Added enhanced form validation in create-form.tsx and accompanying action.  It uses useActionState and checks the state of the form to determine when to show errors.  The state is set by the server action.

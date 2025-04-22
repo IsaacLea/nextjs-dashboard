@@ -25,4 +25,11 @@ nextjs tutorial app
 
 ## Chapter 14 - Improving Accessibility and form validation
 - Adding accessibility checks via lint "pnpm lint"
-- Added enhanced form validation in create-form.tsx and accompanying action.  It uses useActionState and checks the state of the form to determine when to show errors.  The state is set by the server action.
+- Added enhanced form validation in create-form.tsx and accompanying action.  It uses useActionState and checks the state of the form on the server side to determine when to show errors.  The state is set by the server action.
+
+## Chapter 15 - Authentication
+- https://nextjs.org/learn/dashboard-app/adding-authentication
+- Use nextAuth to add authentication
+- added auth.config.ts to define where the login page is and also logic for applying auth to routes
+- added middleware.ts to enable the auth and define a matcher to specify some exclusions
+- added auth.ts to configure a credentials provider to allow user/pass login and implemented login logic (password check)

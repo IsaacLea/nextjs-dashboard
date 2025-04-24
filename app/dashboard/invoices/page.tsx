@@ -6,6 +6,12 @@ import { lusitana } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { fetchInvoicesPages } from '@/app/lib/data';
 import { Suspense } from 'react';
+import { Metadata } from 'next';
+
+// Add the title metadata tag for this page.  Note, it filling a template string with the title of the page as defined in layout.tsx
+export const metadata: Metadata = {
+    title: 'Invoices',
+};
 
 // The searchParams prop is a Promise that resolves to an object with query and page properties
 // searchParams is a special prop that Next.js provides to server components
